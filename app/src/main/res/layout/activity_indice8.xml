@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="ESCAPE GAME" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/question8_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:text="Indice n°8\n\nQuelle est l’équipe gagnante du challenge Sopra Steria 2019 ?\n"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <CheckBox android:id = "@+id/checkbox8_1"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text = "Les Lapins dis site"
+            android:onClick = "onCheckboxClicked"
+            />
+
+        <CheckBox android:id = "@+id/checkbox8_2"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text = "Les Builders"
+            android:onClick = "onCheckboxClicked"
+            />
+
+        <CheckBox android:id = "@+id/checkbox8_3"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text = "Bonnie &amp; Cloud"
+            android:onClick = "onCheckboxClicked"
+            />
+
+        <CheckBox android:id = "@+id/checkbox8_4"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text = "The Imps"
+            android:onClick = "onCheckboxClicked"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/indice8_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Valider"
+            android:background="#000000"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/IndiceReponse8_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/image8View"
+                android:layout_width = "wrap_content"
+                android:layout_height = "250dp"
+                android:src = "@drawable/indice8"/>
+
+            <Button
+                android:id="@+id/retour_btn"
+                android:layout_width = "75dp"
+                android:layout_height = "65dp"
+                android:layout_gravity="right"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:background="@drawable/fleche_retour"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+</LinearLayout>

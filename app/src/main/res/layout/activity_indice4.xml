@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="ESCAPE GAME" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/question4_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:text="Indice n°4\n\nQui est responsable de la Miage de Nantes ?\n" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <CheckBox android:id = "@+id/checkbox4_1"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text = "Benoit Delahaye"
+            android:onClick = "onCheckboxClicked"
+            />
+
+        <CheckBox android:id = "@+id/checkbox4_2"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text = "Géraldine Jean"
+            android:onClick = "onCheckboxClicked"
+            />
+
+        <CheckBox android:id = "@+id/checkbox4_3"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text = "Christophe Suaudeau"
+            android:onClick = "onCheckboxClicked"
+            />
+
+        <CheckBox android:id = "@+id/checkbox4_4"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text = "Laura Monceaux"
+            android:onClick = "onCheckboxClicked"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/indice4_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Valider"
+            android:background="#000000"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/IndiceReponse4_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image4View"
+                android:layout_width = "wrap_content"
+                android:layout_height = "250dp"
+                android:src = "@drawable/indice4"/>
+
+        <Button
+            android:id="@+id/retour_btn"
+            android:layout_width = "75dp"
+            android:layout_height = "65dp"
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:background="@drawable/fleche_retour"
+            android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

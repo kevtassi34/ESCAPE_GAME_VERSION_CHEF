@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Escape Game 2020 </string>
+    <string name="title_activity_escape_video">EscapeVideoActivity</string>
+</resources>
